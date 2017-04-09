@@ -1,0 +1,15 @@
+<ion-view view-title="Todo">
+    <ion-nav-buttons side="right">
+        <button class="button button-icon" ui-sref="create">
+            <i class="icon ion-compose"></i>
+        </button>
+    </ion-nav-buttons>
+    <ion-content>
+        <!-- our list and list items -->
+        <ion-list>
+            <ion-item ng-repeat="task in tasks">
+                {{task.title}}
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

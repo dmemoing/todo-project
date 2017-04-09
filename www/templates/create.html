@@ -1,0 +1,18 @@
+<ion-view view-title="New Task">
+    <ion-nav-buttons side="right">
+        <button class="button button-clear button-white" ui-sref="tasks">Cancel</button>
+    </ion-nav-buttons>
+
+    <ion-content>
+        <form ng-submit="createTask(task)">
+            <div class="list">
+                <label class="item item-input">
+                    <input type="text" placeholder="What do you need to do?" ng-model="task.title">
+                </label>
+            </div>
+            <div class="padding">
+                <button type="submit" class="button button-block button-positive">Create Task</button>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>
